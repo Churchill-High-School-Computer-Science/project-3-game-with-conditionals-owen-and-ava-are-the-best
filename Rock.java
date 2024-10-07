@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Main { 
+public class Rock { 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Rock/Paper/Scissors: ");
@@ -45,6 +45,8 @@ public class Main {
             }
             }
             default -> System.out.println("Invalid input");
+
+        Scanner.close();
         }
     
     }
