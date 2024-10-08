@@ -11,42 +11,41 @@ public class Rock {
         String cpuchoice = cpu[guess];
         System.out.println(cpuchoice);
         switch (player) {
-            case "Rock" -> {
+            case "Rock" : {
             switch (cpuchoice) {
-                case "Rock" -> System.out.println("Tie!");
-                case "Paper" -> {
+                case "Rock" :System.out.println("Tie!");
+                case "Paper" : {
                     System.out.println("You lose!");
                 }
-                default -> {
+                default : {
                     System.out.println("You win!");
                 }
             }
             }
-            case "Paper" -> {
+            case "Paper" : {
             switch (cpuchoice) {
-                case "Rock" -> {
+                case "Rock" : {
                     System.out.println("You win!");
                 }
-                case "Paper" -> System.out.println("Tie!");
-                default -> {
+                case "Paper" : System.out.println("Tie!");
+                default : {
                     System.out.println("You lose!");
                 }
             }
             }
-            case "Scissors" -> {
+            case "Scissors" : {
             switch (cpuchoice) {
-                case "Rock" -> {
+                case "Rock" : {
                     System.out.println("You lose!");
                 }
-                case "Paper" -> {
+                case "Paper" : {
                     System.out.println("You win!");
                 }
-                default -> System.out.println("Tie!");
+                default : System.out.println("Tie!");
             }
             }
-            default -> System.out.println("Invalid input");
+            default : System.out.println("Invalid input");
 
-        Scanner.close();
         }
     
     }

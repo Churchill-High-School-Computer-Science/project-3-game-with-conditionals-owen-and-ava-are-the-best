@@ -10,7 +10,6 @@ public class Player {
         Integer card2 = (int) (Math.random() * 11) + 1;
         x.add(card1);
         x.add(card2);
-        System.out.print(x);
         return card1 + card2;
     }   
     
