@@ -26,7 +26,7 @@ public class Black {
         System.out.print("Hit(1) or Stand(2)? ");
         Integer playerchoice = input.nextInt();
         if (playerchoice == 1){
-
+            Integer newplayercard = (int) (Math.random() * 11) + 1;
         }
 
 
