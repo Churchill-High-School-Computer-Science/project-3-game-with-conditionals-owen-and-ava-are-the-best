@@ -12,11 +12,11 @@ public class wordle {
     String potentialword = input.next();
     if(potentialword.substring(0, 1).equals(targetWord.substring(0, 1)))
     {   //letter matches
-        System.out.println(green + potentialword.substring(0, 1) + black);
+        System.out.println(green + potentialword.substring(0, 1) + green);
     }
     else if(targetWord.indexOf(potentialword.substring(0,1)) > -1)
     {   // letter in diff place 
-        System.out.println(green + potentialword.substring(0, 1) + yellow);
+        System.out.println(yellow + potentialword.substring(0, 1) + yellow);
     }
     else if(potentialword.substring(5).equals(targetWord))
     {
