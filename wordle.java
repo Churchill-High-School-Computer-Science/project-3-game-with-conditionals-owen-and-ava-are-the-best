@@ -32,7 +32,7 @@ public class wordle {
     }
     if(!potentialword.equals(targetWord))
     {
-        System.out.println("Wrong!");
+        System.out.println("Wrong! The correct word is" + targetWord);
     }
     }
 }
