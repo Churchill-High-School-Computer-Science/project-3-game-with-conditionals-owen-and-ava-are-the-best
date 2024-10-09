@@ -12,28 +12,34 @@ public class wordle {
     String potentialword = input.next();
     for(int i=0;i<5;i++)
     {
+        for(int j=0;j<5;j++){
 
-    if(potentialword.substring(i, i+1).equals(targetWord.substring(i, i+1)))
+    if(potentialword.substring(j, j+1).equals(targetWord.substring(j, j+1)))
     {   //letter matches
-        System.out.println(green + potentialword.substring(i, i+1) + reset);
+        System.out.print(green + potentialword.substring(j, j+1) + reset);
     }
-    else if(targetWord.indexOf(potentialword.substring(i, i+1)) > -1)
+    else if(targetWord.indexOf(potentialword.substring(j, j+1)) > -1)
     {   // letter in diff place 
-        System.out.println(yellow + potentialword.substring(i, i+1) + reset);
+        System.out.print(yellow + potentialword.substring(j, j+1) + reset);
     }
     else
     {
-        System.out.println(potentialword.substring(i, i+1));
+        System.out.print(potentialword.substring(j, j+1));
+
     }
-    System.out.println("");
+    }
     if(potentialword.equals(targetWord))
     {
-        System.out.println("Correct!");
+        System.out.println(" Correct!");
+        break;
+    }
+    System.out.println("");
+    System.out.println("Enter a random word with 5 letters:"); 
+    potentialword = input.next();
     }
     if(!potentialword.equals(targetWord))
     {
-        System.out.println("Wrong! The correct word is" + targetWord);
-    }
+        System.out.println("Wrong! The correct word is " + targetWord);
     }
 }
 }
