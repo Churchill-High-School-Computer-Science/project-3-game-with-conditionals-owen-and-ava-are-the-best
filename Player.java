@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 
 public class Player {
-    public void hit(){
-
+    public int hit(ArrayList<Integer> hand, int total) {
+        int newCard = (int) (Math.random() * 11) + 1;
+        hand.add(newCard);
+        total += newCard;
+        return total;
     }
 
-    public int builddeck(ArrayList <Integer> x ){
-        Integer card1 = (int) (Math.random() * 11) + 1;
-        Integer card2 = (int) (Math.random() * 11) + 1;
-        x.add(card1);
-        x.add(card2);
+    public int builddeck(ArrayList <Integer> hand ){
+        int card1 = (int) (Math.random() * 11) + 1;
+        int card2 = (int) (Math.random() * 11) + 1;
+        hand.add(card1);
+        hand.add(card2);
         return card1 + card2;
     }   
     
